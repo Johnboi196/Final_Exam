@@ -45,7 +45,7 @@ while ($pekerja = mysqli_fetch_array($result)) {
         </div>
 </div>
     <div style="background-color:white; border-radius:10px;width:50%;padding:8px;display:block;margin-left:auto;margin-right:auto;">
-        <h5 style="text-align:center;">UPDATE MAKLUMAT ANIQ NAUFAL BIN MUHAMMAD AZRAEI</h5>
+        <h5 style="text-align:center;">UPDATE MAKLUMAT <?php echo $namapekerja;?></h5>
     <form action="update.php" method="post">
     <div class="mb-3">
         <label for="id" class="form-label">ID</label>
