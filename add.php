@@ -35,7 +35,7 @@ if(isset($_POST['no_kp'])) {
         </div>
 </div>
 <div style="background-color:white; border-radius:10px;width:30%;padding:8px;display:block;margin-left:auto;margin-right:auto;">
-        <h5 style="text-align:center;">Add Maklumat</h5>
+        <h5 style="text-align:center;">ADD MAKLUMAT</h5>
     <form action="add.php" method="POST">
     <div class="mb-3">
         <label for="id" class="form-label">ID</label>
