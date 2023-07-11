@@ -28,7 +28,6 @@ include "connection.php";
             <td >NO HP</td>
             <td>JANTINA</td>
             <td></td>
-            <td></td>
             <?php
             $sql = "SELECT * FROM info_pekerja ORDER BY id ASC";
             $data = mysqli_query($con, $sql);
@@ -37,11 +36,11 @@ include "connection.php";
                 ?>
                 <tr>
                     <td class="bilnum"><?php echo $bil; ?></td>
-                    <td><?php echo $pekerja['id']; ?></td>
                     <td><?php echo $pekerja['nama_pekerja']; ?></td>
                     <td><?php echo $pekerja['no_kp']; ?></td>
-                    <td><?php echo $pekerja['jantina']; ?></td>
                     <td><?php echo $pekerja['no_hp']; ?></td>
+                    <td><?php echo $pekerja['jantina']; ?></td>
+                    
                     <td>
                         <a href="update.php?no_kp=<?php echo $pekerja['no_kp'];?>"><button class="btn btn-primary">Kemaskini</button></a> 
                         <a href="delete.php?no_kp=<?php echo $pekerja['no_kp'];?>"><button class="btn btn-primary">Padam</button></a> 

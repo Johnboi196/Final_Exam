@@ -51,7 +51,7 @@ if(isset($_POST['no_kp'])) {
         </div>
         <div class="mb-3">
         <label for="ic">HP</label>
-        <input type="text" name="no_kp" style="width:98%;display:block;margin-left:auto;margin-right:auto;" class="form-control" id="">
+        <input type="text" name="no_hp" style="width:98%;display:block;margin-left:auto;margin-right:auto;" class="form-control" id="">
         </div>
         <div class="mb-3">
         <label for="ic">JANTINA</label>
