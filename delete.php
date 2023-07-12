@@ -7,5 +7,5 @@
      echo "<script>alert('Berjaya padam rekod')</script>";
 else 
    echo "<script>alert('Tidak berjaya padam rekod')</script>";
-echo "<script>window.location='index.php'</script>";
+echo "<script>window.location='list.php'</script>";
 ?>

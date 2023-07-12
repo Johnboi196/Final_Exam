@@ -13,7 +13,7 @@ if(isset($_POST['no_kp'])) {
         echo "<script>alert('Berjaya kemaskini')</script>";
     else 
         echo "<script>alert('Tidak berjaya kemaskini')</script>";
-    echo "<script>window.location='index.php'</script>";
+    echo "<script>window.location='list.php'</script>";
 }
 ?>
 <!DOCTYPE html>
@@ -28,7 +28,7 @@ if(isset($_POST['no_kp'])) {
 <div class="p-3 m-0 border-0 bd-example m-0 border-0">
 <div class="card">
     <div class="card-body">
-    <a href="index.php">
+    <a href="list.php">
         <button class="btn btn-primary">BACK</button>
         </a>
         </div>

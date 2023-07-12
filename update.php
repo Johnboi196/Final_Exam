@@ -13,7 +13,7 @@ if(isset($_POST['no_kp'])) {
         echo "<script>alert('Berjaya kemaskini')</script>";
     else 
         echo "<script>alert('Tidak berjaya kemaskini')</script>";
-    echo "<script>window.location='megaholdings.php'</script>";
+    echo "<script>window.location='list.php'</script>";
 }
 $nokp = $_GET['no_kp'];
 $sql = "SELECT * FROM info_pekerja WHERE no_kp = '$nokp' ";
@@ -38,7 +38,7 @@ while ($pekerja = mysqli_fetch_array($result)) {
 <div class="p-3 m-0 border-0 bd-example m-0 border-0">
 <div class="card">
     <div class="card-body">
-        <a href="index.php">
+        <a href="list.php">
         <button class="btn btn-primary">BACK</button>
     </a>
         </div> 
@@ -49,19 +49,19 @@ while ($pekerja = mysqli_fetch_array($result)) {
     <form action="update.php" method="post">
     <div class="mb-3">
         <label for="id" class="form-label">ID</label>
-        <input type="text" style="width:98%;display:block;margin-left:auto;margin-right:auto;" class="form-control" value='<?php echo $id;?>'>
+        <input type="text" name="id" style="width:98%;display:block;margin-left:auto;margin-right:auto;" class="form-control" value='<?php echo $id;?>'>
         </div>
     <div class="mb-3">
         <label for="ic" class="form-label">IC</label>
-        <input type="text" style="width:98%;display:block;margin-left:auto;margin-right:auto;" class="form-control" value="<?php echo $nokp;?>">
+        <input type="text" name="no_kp" style="width:98%;display:block;margin-left:auto;margin-right:auto;" class="form-control" value="<?php echo $nokp;?>">
         </div>
         <div class="mb-3">
         <label for="ic" class="form-label">NAMA</label>
-        <input type="text" style="width:98%;display:block;margin-left:auto;margin-right:auto;" class="form-control" value="<?php echo $namapekerja;?>">
+        <input type="text" name="nama_pekerja" style="width:98%;display:block;margin-left:auto;margin-right:auto;" class="form-control" value="<?php echo $namapekerja;?>">
         </div>
         <div class="mb-3">
         <label for="ic" class="form-label">HP</label>
-        <input type="text" style="width:98%;display:block;margin-left:auto;margin-right:auto;" class="form-control" value="<?php echo $nohp;?>">
+        <input type="text" name="no_hp" style="width:98%;display:block;margin-left:auto;margin-right:auto;" class="form-control" value="<?php echo $nohp;?>">
         </div>
         <div class="mb-3">
         <label for="disabledSelect" class="form-label">JANTINA</label>
